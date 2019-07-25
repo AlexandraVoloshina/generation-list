@@ -13,7 +13,7 @@ function generateList(arr){
         	cloneLi.innerText = arr[i];        	     
 		} 
 		else {
-		 	cloneLi = generateList(arr[i]);
+		 	cloneLi.appendChild(generateList(arr[i]));
 		}
 		ul.appendChild(cloneLi); 
 	}
